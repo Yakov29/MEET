@@ -1,8 +1,8 @@
-# MiroTalk P2P - Ngrok
+# MiroTalk C2C - Ngrok
 
-![ngrok](../public/images/ngrok.png)
+![ngrok](../frontend/images/ngrok.png)
 
-If you want to expose MiroTalk P2P from your `Local PC` to outside in `HTTPS`, you need to do 1 thing
+If you want to expose MiroTalk C2C from your `Local PC` to outside in `HTTPS`, you need to do 1 thing
 
 Edit the Ngrok part on `.env` file
 
@@ -11,22 +11,17 @@ Edit the Ngrok part on `.env` file
 # 2. Get started for free
 # 3. Copy YourNgrokAuthToken: https://dashboard.ngrok.com/get-started/your-authtoken
 
-NGROK_ENABLED=true
 NGROK_AUTH_TOKEN=YourNgrokAuthToken
 ```
 
 ---
 
-Then, when you run it with `npm start`, you should see in the console log this line:
+Then, when you run it with `npm start`, you should see in the console log:
 
 ```bash
-server_tunnel: 'https://xxxxxxxxxxxxxxxxxx.ngrok.io'
+ngrokHome: 'https://xxxx-xx-xx-xxx-xx.ngrok.io',
+ngrokRoom: 'https://xxxx-xx-xx-xxx-xx.ngrok.io/?room=test',
+ngrokJoin: 'https://xxxx-xx-xx-xxx-xx.ngrok.io/join?room=test&name=test',
 ```
 
-So open it in your browser, join in the room, share it to whom you want and wait participants to join.
-
----
-
-## Support
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/mirotalk/mirotalk-free-secure-video-calls-chat-screen-sharing)
+So open the URL in your browser, join in the room, `Share` the `URL` to whom you want and wait participants to join.

@@ -1,5 +1,4 @@
 FROM node:16-alpine 
-# https://hub.docker.com/_/node
 
 WORKDIR /src
 
@@ -8,13 +7,13 @@ RUN apk add --no-cache \
 	vim
 
 COPY package.json .
-COPY .env.template ./.env
+COPY .env ./.env
 
 RUN npm install
 
-COPY app app
-COPY public public
+COPY frontend frontend
+COPY backend backend
 
-EXPOSE 3000/tcp
+EXPOSE 8080/tcp
 
 CMD npm start

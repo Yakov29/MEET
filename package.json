@@ -1,48 +1,37 @@
 {
-    "name": "mirotalk",
+    "name": "mirotalkc2c",
     "version": "1.0.2",
-    "description": "A free WebRTC browser-based video call",
+    "description": "A free WebRTC Cam-2-Cam browser-based video calls",
     "main": "server.js",
     "scripts": {
-        "start": "node app/src/server.js",
+        "start": "node backend/server.js",
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "npx prettier --write ."
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Yakov29/MEET"
+        "url": "git+https://github.com/miroslavpejic85/mirotalkc2c"
     },
     "keywords": [
+        "c2c",
         "webrtc",
         "socket.io",
-        "p2p",
-        "nodejs",
+        "ngrok",
         "video"
     ],
     "author": "Miroslav Pejic",
     "license": "AGPL-3.0",
-    "homepage": "https://github.com/Yakov29/MEET",
+    "homepage": "https://github.com/miroslavpejic85/mirotalkc2c",
     "dependencies": {
-        "@sentry/integrations": "^7.38.0",
-        "@sentry/node": "^7.38.0",
-        "body-parser": "^1.20.1",
-        "colors": "^1.4.0",
         "compression": "^1.7.4",
         "cors": "^2.8.5",
-        "crypto-js": "^4.1.1",
-        "dotenv": "^16.0.3",
         "express": "^4.18.2",
         "ngrok": "^3.4.1",
-        "qs": "^6.11.0",
         "socket.io": "^4.6.1",
-        "swagger-ui-express": "^4.6.1",
-        "uuid": "9.0.0",
-        "xss": "^1.0.14",
-        "yamljs": "^0.3.0"
+        "xss": "^1.0.14"
     },
     "devDependencies": {
-        "gh-pages": "^5.0.0",
-        "node-fetch": "^2.6.6",
+        "dotenv": "^16.0.3",
         "prettier": "2.8.4"
     }
 }
