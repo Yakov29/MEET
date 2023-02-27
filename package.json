@@ -10,7 +10,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/miroslavpejic85/mirotalk"
+        "url": "git+https://github.com/Yakov29/MEET"
     },
     "keywords": [
         "webrtc",
@@ -21,7 +21,7 @@
     ],
     "author": "Miroslav Pejic",
     "license": "AGPL-3.0",
-    "homepage": "https://github.com/miroslavpejic85/mirotalk",
+    "homepage": "https://github.com/Yakov29/MEET",
     "dependencies": {
         "@sentry/integrations": "^7.38.0",
         "@sentry/node": "^7.38.0",
@@ -41,6 +41,7 @@
         "yamljs": "^0.3.0"
     },
     "devDependencies": {
+        "gh-pages": "^5.0.0",
         "node-fetch": "^2.6.6",
         "prettier": "2.8.4"
     }
